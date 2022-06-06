@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// 	// if it doesn't containt first line use this
+// if it doesn't containt first line use this
 // func numbers(s string) []int {
 // 	var n []int
 // 	for _, f := range strings.Fields(s) {
@@ -17,7 +17,7 @@ import (
 // }
 
 func main() {
-	// // if it doesn't containt first line use this
+	// if it doesn't containt first line use this
 	// var lines []int
 	// scanner := bufio.NewScanner(os.Stdin)
 	// scanner.Scan()
@@ -31,7 +31,6 @@ func main() {
 	for i := 0; i < length; i++ {
 		fmt.Scanln(&numbers[i])
 	}
-	// fmt.Println(numbers)
 	fmt.Println(compareTwoSide(numbers, length))
 }
 
@@ -51,8 +50,6 @@ func compareTwoSide(arr []int, n int) string {
 		for k := i + 1; k < n; k++ {
 			rightElem += arr[k]
 		}
-		// fmt.Println("Debug right", rightElem)
-		// fmt.Println("Debug left", leftElem)
 		if leftElem == rightElem {
 			return Yes
 		}

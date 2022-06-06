@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// The teacher will hand in one candy to each student sequentially
+// assume that candies >= students
 func main() {
 	var inputData [3]int
 
